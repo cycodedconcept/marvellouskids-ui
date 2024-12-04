@@ -14,6 +14,11 @@ export default {
 				textColor: "#232323",
 				darkBlue: "#0D093B",
 			},
+			backgroundImage: {
+				welcome: "url('/assets/welcome.png')",
+				"welcome-cloud-design": "url('/assets/marvellous-cloud-design.png')",
+				"welcome-cloud": "url('/assets/home-cloud.png')",
+			},
 		},
 	},
 	plugins: [],

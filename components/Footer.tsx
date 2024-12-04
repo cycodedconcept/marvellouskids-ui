@@ -99,8 +99,8 @@ const Footer = () => {
 
 				<div className="h-[0.5px] bg-white w-full" />
 
-				<div className="flex justify-between items-center mt-8">
-					<p className="py-5">&copy; 2024 Marvellous kids childcare. All rights reserved.</p>
+				<div className="flex lg:flex-row flex-col justify-between items-center mt-14 mb-10 gap-y-5">
+					<p className="text-center">&copy; 2024 Marvellous kids childcare. All rights reserved.</p>
 
 					<ul className="flex space-x-8">
 						<Link href="/">Terms</Link>

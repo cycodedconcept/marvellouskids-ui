@@ -1,14 +1,20 @@
+"use client";
 import Logo from "@/ui/Logo";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+
+const navLinks = [
+	{ name: "Home", href: "/" },
+	{ name: "Why us", href: "/why-us" },
+	{ name: "Area of Care", href: "/area-of-care" },
+	{ name: "Our Space", href: "/our-space" },
+	{ name: "More", href: "/more" },
+];
 
 const NavBar = () => {
-	const navLinks = [
-		{ name: "Home", href: "/" },
-		{ name: "Why us", href: "/why-us" },
-		{ name: "Area of Care", href: "/area-of-care" },
-		{ name: "Our Space", href: "/our-space" },
-		{ name: "More", href: "/more" },
-	];
+	const [activeNav, setActiveNav] = useState("/");
+	const pathname = usePathname();
 
 	return (
 		<header className="sticky top-0 bg-white">
@@ -18,8 +24,15 @@ const NavBar = () => {
 				<nav className="flex items-center space-x-5">
 					<ul className="flex items-center space-x-10">
 						{navLinks.map(({ href, name }) => (
-							<li key={name}>
-								<Link href={href}>{name}</Link>
+							<li
+								key={name}
+								className={`hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-primary hover:to-lemon ${
+									pathname === href && "bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon"
+								}`}
+							>
+								<Link href={href} onClick={() => setActiveNav(href)}>
+									{name}
+								</Link>
 							</li>
 						))}
 					</ul>

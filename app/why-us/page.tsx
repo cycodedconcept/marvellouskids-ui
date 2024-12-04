@@ -6,7 +6,9 @@ const WhyUsPage = () => {
 		<div>
 			<main className="bg-dreams-begin bg-no-repeat bg-cover h-screen flex justify-end md:px-32">
 				<div className="flex items-center flex-col text-center p-5 text-white md:w-[32rem] w-screen bg-gradient-to-t from-primary/75 via-primary/95 to-lemon/75 h-full inset-0 transform md:skew-x-12">
-					<h1 className="text-5xl font-extrabold pt-40 mb-5">Where Little Dreams Begin and Families Thrive</h1>
+					<h1 className="md:text-5xl text-4xl font-extrabold pt-40 mb-5">
+						Where Little Dreams Begin and Families Thrive
+					</h1>
 
 					<p className="text-lg font-semibold">
 						Our professional team and flexible services, including trusted nanny support and free tax-funded childcare

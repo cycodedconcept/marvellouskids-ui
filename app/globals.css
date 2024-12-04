@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	input:focus-within,
+	textarea:focus-within {
+		@apply outline-none;
+	}
+}

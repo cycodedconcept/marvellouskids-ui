@@ -11,7 +11,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<header>
+		<header className="sticky top-0 bg-white">
 			<div className="flex items-center justify-between px-14 py-3">
 				<Logo />
 

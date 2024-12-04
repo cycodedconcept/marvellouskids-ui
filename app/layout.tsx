@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Itim } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -20,9 +21,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${ItimFont.className} `}>
+			<body className={`${ItimFont.className} text-textColor`}>
 				<NavBar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

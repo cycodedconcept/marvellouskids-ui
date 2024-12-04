@@ -17,7 +17,7 @@ const NavBar = () => {
 	const pathname = usePathname();
 
 	return (
-		<header className="sticky top-0 bg-white">
+		<header className="sticky top-0 bg-white z-50">
 			<div className="flex items-center justify-between px-14 py-3">
 				<Logo />
 

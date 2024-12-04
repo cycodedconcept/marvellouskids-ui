@@ -18,6 +18,8 @@ export default {
 				welcome: "url('/assets/welcome.png')",
 				"welcome-cloud-design": "url('/assets/marvellous-cloud-design.png')",
 				"welcome-cloud": "url('/assets/home-cloud.png')",
+
+				"dreams-begin": "url('/assets/where-little-dreams-begin.png')",
 			},
 		},
 	},

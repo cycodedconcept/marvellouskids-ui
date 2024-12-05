@@ -36,7 +36,7 @@ const AdditionalPage = () => {
 	];
 	return (
 		<div>
-			<main className="h-[calc(100vh-5rem)] bg-dreams-begin3 bg-no-repeat bg-cover bg-right-top text-white text-center md:px-14 px-5 pt-40 flex flex-col items-center">
+			<main className="h-[calc(100vh-5rem)] bg-dreams-begin3 bg-no-repeat bg-cover  text-white text-center md:px-14 px-5 pt-40 flex flex-col items-center">
 				<div className="lg:w-2/3">
 					<h1 className="md:text-6xl sm:text-5xl text-4xl font-extrabold">
 						Where Little Dreams Begin and Families Thrive

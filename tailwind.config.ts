@@ -20,6 +20,8 @@ export default {
 				"welcome-cloud": "url('/assets/home-cloud.png')",
 
 				"dreams-begin": "url('/assets/where-little-dreams-begin.png')",
+				"dreams-begin2": "url('/assets/where-little-dreams-begin2.png')",
+				"dreams-begin3": "url('/assets/where-little-dreams-begin3.png')",
 			},
 		},
 	},

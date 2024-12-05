@@ -36,7 +36,7 @@ export default function Home() {
 
 			{/* Cloud Design */}
 			<div
-				className="lg:h-[17rem] md:h-[10rem] h-[8rem] bg-contain bg-no-repeat"
+				className="lg:h-[17rem] md:h-[10rem] h-[8rem] bg-contain bg-no-repeat bg-[#F9F7F8]"
 				style={{ backgroundImage: "url('/assets/special-care-cloud.png')" }}
 			/>
 

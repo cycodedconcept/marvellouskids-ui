@@ -40,25 +40,23 @@ const AreaOfCare = () => {
 		},
 	];
 	return (
-		<section className="md:px-14 px-5">
-			<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">Area Of Care</h4>
-			<h1 className="lg:text-5xl text-4xl font-extrabold text-center mb-[10rem]">
-				Providing Good Qualities <br /> For Your Loving Kids
-			</h1>
+		<section className="md:px-14 px-5 bg-[#F9F7F8] pb-10">
+			<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">Area of Care</h4>
+			<h1 className="lg:text-5xl text-4xl font-extrabold text-center mb-[10rem]">Our Services</h1>
 
 			<div className="flex gap-x-10 gap-y-40 flex-wrap justify-center">
-				{areaOfCare.map((areas) => (
+				{areaOfCare.map((area) => (
 					<div
-						key={areas.title}
+						key={area.title}
 						className="w-[350px] rounded-[2.5rem] p-8 flex flex-col"
-						style={{ background: `${areas.color}` }}
+						style={{ background: `${area.color}` }}
 					>
-						<Image src={areas.src} alt={areas.title} width={300} height={200} className="-mt-[10rem] mb-2" />
-						<h3 className="text-2xl font-bold pb-3">{areas.title}</h3>
-						<p>{areas.content}</p>
+						<Image src={area.src} alt={area.title} width={300} height={200} className="-mt-[10rem] mb-2" />
+						<h3 className="text-2xl font-bold pb-3">{area.title}</h3>
+						<p>{area.content}</p>
 						<div className="flex-grow"></div>
 						<Link href="/" className="text-primary font-bold self-end mt-5">
-							Read more
+							Read More
 						</Link>
 					</div>
 				))}

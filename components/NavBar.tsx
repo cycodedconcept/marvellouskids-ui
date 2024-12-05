@@ -40,12 +40,18 @@ const NavBar = () => {
 					</ul>
 
 					<div className="space-x-5 hidden lg:flex text-lg">
-						<button className="border border-primary py-2 px-5 rounded-full bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon">
+						<Link
+							href="/contact-us"
+							className="border border-primary py-2 px-5 rounded-full bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon"
+						>
 							Contact Us
-						</button>
-						<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon">
+						</Link>
+						<Link
+							href="/get-started"
+							className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon"
+						>
 							Join Now
-						</button>
+						</Link>
 					</div>
 				</nav>
 

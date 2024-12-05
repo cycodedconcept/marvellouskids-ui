@@ -2,12 +2,18 @@ import Image from "next/image";
 
 const ContactUs = () => {
 	return (
-		<section className="bg-[#F9F7F8] md:px-14 px-5 py-20 flex items-center lg:flex-row flex-col gap-y-10">
-			<div className="lg:w-[40%] w-full flex flex-col">
-				<Image className="self-center mb-5" src="/assets/circle-design.png" alt="Contact Us" width={50} height={50} />
+		<section className="bg-[#F9F7F8] md:px-14 px-5 py-20 flex lg:flex-row flex-col gap-y-10">
+			<div className="lg:w-[40%] w-full flex flex-col lg:pt-24">
+				<Image
+					className="self-center mb-5"
+					src="/assets/circle-design.png"
+					alt="Circle Design"
+					width={50}
+					height={50}
+				/>
 				<div>
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Contact Us</h4>
-					<h1 className="lg:text-5xl text-4xl font-extrabold">
+					<h1 className="lg:text-5xl text-4xl font-extrabold text-darkBlue">
 						You&apos;ve Got Questions <br /> Feel Free to Ask
 					</h1>
 				</div>

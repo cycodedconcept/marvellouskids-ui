@@ -35,7 +35,7 @@ const Footer = () => {
 		<section className="bg-[#F9F7F8]">
 			<div
 				style={{ backgroundImage: "url('/assets/darkblue-cloud.png')" }}
-				className="h-[25rem] bg-cover bg-no-repeat -mb-40"
+				className="h-[25rem] bg-cover bg-no-repeat -mb-40 -mt-14"
 			/>
 			<div className="bg-darkBlue text-[#B4B3B4] md:px-14 px-5 py-5">
 				<div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10 mb-8">

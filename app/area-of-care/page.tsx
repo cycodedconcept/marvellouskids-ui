@@ -23,13 +23,13 @@ const AreaOfCare = () => {
 				</div>
 			</main>
 
-			<section className="mt-10 mb-20 md:px-14 px-5 grid lg:grid-cols-3 grid-cols-1 lg:gap-x-10 gap-y-10">
+			<section className="mt-10 mb-20 md:px-14 px-5 grid lg:grid-cols-3 grid-cols-1 lg:gap-x-5 gap-y-5">
 				{/* Sidebar */}
-				<aside className="flex flex-col space-y-5 bg-[#B0FFAE] rounded-2xl p-5 col-span-1 h-fit">
+				<aside className="flex flex-col space-y-5 bg-[#B0FFAE] rounded-2xl py-5 px-2.5 col-span-1 h-fit">
 					{sidebarContent.map((content) => (
 						<div
 							key={content.title}
-							className={`text-2xl p-3 flex items-center justify-between space-x-5 border-2 border-black rounded-full hover:bg-gray-100 cursor-pointer ${
+							className={`text-xl p-2 flex items-center justify-between border-2 border-black rounded-full hover:bg-gray-100 cursor-pointer ${
 								activeContent.title === content.title ? "bg-gray-100" : ""
 							}`}
 							onClick={() => setActiveContent(content)}
@@ -75,9 +75,11 @@ const AreaOfCare = () => {
 								);
 							case "list":
 								return (
-									<ul key={index} className="list-disc mt-5">
+									<ul key={index} className="list-none mt-5">
 										{item?.items?.map((listItem, index) => (
-											<li key={index}>{listItem}</li>
+											<li key={index} className="before:content-['✔'] before:mr-2 before:text-green-500">
+												{listItem}
+											</li>
 										))}
 									</ul>
 								);

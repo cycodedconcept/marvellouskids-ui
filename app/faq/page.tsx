@@ -34,7 +34,7 @@ const FAQ = () => {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
 	return (
-		<div className="md:px-14 px-5 mb-14">
+		<div className="md:px-14 px-5 mb-20">
 			<div className="mt-10">
 				<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">FAQs</h4>
 				<h2 className="lg:text-4xl text-3xl font-light text-center mb-3">Here You Will Find</h2>
@@ -45,7 +45,7 @@ const FAQ = () => {
 				{faqs.map((faq, index) => (
 					<div
 						key={index}
-						className="border border-primary p-5 rounded-lg cursor-pointer"
+						className="border border-primary p-5 rounded-lg cursor-pointer shadow-md"
 						onClick={() => setActiveIndex(index === activeIndex ? null : index)}
 					>
 						<div className="flex items-center justify-between">

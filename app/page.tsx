@@ -5,12 +5,11 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<div>
-			<main className="bg-welcome h-screen bg-no-repeat bg-cover">
+			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom">
 				<div className="bg-welcome-cloud h-full bg-no-repeat"></div>
-				{/* <div className="bg-welcome-cloud-design h-[16rem] bg-no-repeat bg-cover bg-bottom" /> */}
 			</main>
 
-			<section className="flex flex-col md:flex-row items-center justify-between md:space-x-10 space-y-5 md:px-14 px-5 py-10">
+			<section className="flex flex-col md:flex-row items-center justify-between md:space-x-10 space-y-5 md:px-14 px-5 pb-10">
 				<div className="lg:w-1/2">
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Marvellous Kids Childcare,</h4>
 					<h1 className="lg:text-5xl text-4xl font-extrabold">Offer Special Care For Your Children</h1>

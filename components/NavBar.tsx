@@ -9,12 +9,12 @@ const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "Why us", href: "/why-us" },
 	{ name: "Area of Care", href: "/area-of-care", sub: { name: "Additional", href: "/additional" } },
-	{ name: "Our Space", href: "/our-space" },
-	{ name: "More", href: "/more", sub: { name: "FAQ", href: "/faq" } },
+	{ name: "Our Space", href: "#" },
+	{ name: "More", href: "/faq", sub: { name: "FAQ", href: "/faq" } },
 ];
 
 const NavBar = () => {
-	const [activeNav, setActiveNav] = useState("/");
+	const [, setActiveNav] = useState("/");
 	const [showDropdown, setShowDropdown] = useState("");
 	const [mobileNav, setMobileNav] = useState(false);
 	const pathname = usePathname();
@@ -30,7 +30,7 @@ const NavBar = () => {
 
 				{/* Desktop Navigation */}
 				<nav className="md:flex items-center space-x-5 hidden">
-					<ul className="flex items-center space-x-8">
+					<ul className="flex items-center lg:space-x-5 space-x-8">
 						{navLinks.map(({ href, name, sub }) => (
 							<div
 								className="relative"

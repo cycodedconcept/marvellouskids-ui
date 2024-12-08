@@ -5,18 +5,21 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<div>
-			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom pt-20 md:px-14 px-5">
-				<div className="bg-welcome-cloud h-[561.41px] w-[643px] bg-no-repeat flex flex-col items-center justify-center text-center">
-					<h3 className="text-3xl font-semibold">Welcome To</h3>
-					<h1 className="text-6xl text-primary font-extrabold mb-3">Marvellous Kids Childcare & Nanny Services</h1>
-					<h3 className="text-3xl font-semibold pr-20 mb-5">Caring for Your Children, Supporting Your Family.</h3>
+			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom pt-10 md:px-20 px-5 flex flex-col sm:items-start items-center">
+				<div className="bg-welcome-cloud lg:bg-cover bg-contain bg-no-repeat sm:h-[561.41px] h-[23rem] w-[23rem] sm:w-[643px] sm:pt-10 pt-14 flex flex-col items-center sm:justify-center text-center">
+					<h3 className="sm:text-3xl text-lg font-semibold">Welcome To</h3>
+					<h1 className="sm:text-6xl text-3xl text-primary font-extrabold mb-3">
+						Marvellous Kids Childcare & Nanny Services
+					</h1>
+					<h3 className="sm:text-3xl text-lg font-semibold sm:pr-20 pr-8 mb-5">
+						Caring for Your Children, Supporting Your Family.
+					</h3>
 
-					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon capitalize text-2xl">
+					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon capitalize lg:text-2xl md:text-xl text-lg">
 						Book a visit
 					</button>
 				</div>
 			</main>
-
 			<section className="flex flex-col md:flex-row items-center justify-between md:space-x-10 space-y-5 md:px-14 px-5 pb-10">
 				<div className="lg:w-1/2">
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Marvellous Kids Childcare,</h4>

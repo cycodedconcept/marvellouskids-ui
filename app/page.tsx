@@ -5,8 +5,16 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<div>
-			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom">
-				<div className="bg-welcome-cloud h-full bg-no-repeat"></div>
+			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom pt-20 md:px-14 px-5">
+				<div className="bg-welcome-cloud h-[561.41px] w-[643px] bg-no-repeat flex flex-col items-center justify-center text-center">
+					<h3 className="text-3xl font-semibold">Welcome To</h3>
+					<h1 className="text-6xl text-primary font-extrabold mb-3">Marvellous Kids Childcare & Nanny Services</h1>
+					<h3 className="text-3xl font-semibold pr-20 mb-5">Caring for Your Children, Supporting Your Family.</h3>
+
+					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon capitalize text-2xl">
+						Book a visit
+					</button>
+				</div>
 			</main>
 
 			<section className="flex flex-col md:flex-row items-center justify-between md:space-x-10 space-y-5 md:px-14 px-5 pb-10">

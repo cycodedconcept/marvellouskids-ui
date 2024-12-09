@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-// import Link from "next/link";
 import ContactUs from "@/components/ContactUs";
+import { Slide } from "@/animation/Slide";
 
 const AdditionalPage = () => {
 	const areaOfCare = [
@@ -37,7 +37,7 @@ const AdditionalPage = () => {
 	return (
 		<div>
 			<main className="h-[calc(100vh-5rem)] bg-dreams-begin3 bg-no-repeat bg-cover  text-white text-center md:px-14 px-5 pt-40 flex flex-col items-center">
-				<div className="lg:w-2/3">
+				<Slide className="lg:w-2/3">
 					<h1 className="md:text-6xl sm:text-5xl text-4xl font-extrabold">
 						Where Little Dreams Begin and Families Thrive
 					</h1>
@@ -45,12 +45,12 @@ const AdditionalPage = () => {
 						Our professional team and flexible services, including trusted nanny support and free tax-funded childcare
 						for eligible families, are here to make parenting less stressful and more rewarding.
 					</p>
-				</div>
+				</Slide>
 			</main>
 
 			<section className="py-20 flex flex-col space-y-10">
 				<div className="flex items-center md:flex-row flex-col gap-10 md:px-14 px-5">
-					<div className="w-full">
+					<Slide towards="left" delay={0.5} className="w-full">
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold mt-2">We Are Your Trusted Partner</h4>
 						<h1 className="lg:text-5xl text-4xl font-extrabold">Finding the Perfect Match</h1>
 						<p className="text-lg mt-2">
@@ -58,7 +58,7 @@ const AdditionalPage = () => {
 							child&apos;s age, specific requirements, experience level, and expectations. Our goal is to connect you
 							with the best-suited childcare professional for your unique needs.
 						</p>
-					</div>
+					</Slide>
 
 					<Image
 						className="w-full"
@@ -70,7 +70,7 @@ const AdditionalPage = () => {
 				</div>
 
 				<div className="flex items-center md:flex-row-reverse flex-col gap-10 md:px-14 px-5">
-					<div className="w-full">
+					<Slide towards="right" delay={0.5} className="w-full">
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold mt-2">We Are Your Trusted Partner</h4>
 						<h1 className="lg:text-5xl text-4xl font-extrabold">Finding the Perfect Match</h1>
 						<p className="text-lg mt-2">
@@ -78,7 +78,7 @@ const AdditionalPage = () => {
 							child&apos;s age, specific requirements, experience level, and expectations. Our goal is to connect you
 							with the best-suited childcare professional for your unique needs.
 						</p>
-					</div>
+					</Slide>
 
 					<Image
 						className="w-full"
@@ -91,7 +91,7 @@ const AdditionalPage = () => {
 			</section>
 
 			{/* CTA */}
-			<div className="flex flex-col items-center space-y-5 md:px-14 px-5 text-center mb-20">
+			<Slide className="flex flex-col items-center space-y-5 md:px-14 px-5 text-center mb-20">
 				<p className="md:text-2xl text-lg font-semibold">
 					At Marvellous Kids, we are more than just a childcare provider—we are your trusted partner in ensuring your
 					children are cared for with love, attention, and professionalism.
@@ -99,11 +99,11 @@ const AdditionalPage = () => {
 				<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon">
 					Book A Visit
 				</button>
-			</div>
+			</Slide>
 
 			{/* Area Of Care */}
 			<section className="md:px-14 px-5 bg-[#F9F7F8] py-10">
-				<div className="flex flex-col items-center text-center">
+				<Slide delay={0.5} className="flex flex-col items-center text-center">
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Area of Care</h4>
 					<h1 className="lg:text-5xl text-4xl font-extrabold capitalize lg:w-2/3">
 						we are more than just a childcare provider
@@ -113,7 +113,7 @@ const AdditionalPage = () => {
 						By sharing your specific requirements, we connect you with experienced caregivers tailored to your needs.
 						Here&apos;s how we cater to various childcare situations:
 					</p>
-				</div>
+				</Slide>
 
 				<div className="flex gap-x-10 gap-y-40 flex-wrap justify-center">
 					{areaOfCare.map((area) => (
@@ -126,39 +126,38 @@ const AdditionalPage = () => {
 							<h3 className="text-2xl font-bold pb-3">{area.title}</h3>
 							<p>{area.content}</p>
 							<div className="flex-grow"></div>
-							{/* <Link href="/" className="text-primary font-bold self-end mt-5">
-								Read More
-							</Link> */}
 						</div>
 					))}
 				</div>
 			</section>
 
 			<section
-				className="bg-cover h-[37rem] w-full bg-no-repeat flex flex-col items-center justify-center text-white text-center lg:px-14 px-5 mb-20"
+				className="bg-cover h-[37rem] w-full bg-no-repeat lg:px-14 px-5 mb-20"
 				style={{
 					background:
 						"linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/care-for-every-child.png')",
 				}}
 			>
-				<h1 className="lg:text-6xl md:text-5xl text-4xl font-extrabold mb-5">
-					Where Care Meets Growth For Every Child
-				</h1>
-				<h3 className="lg:text-2xl text-lg font-semibold mb-8">
-					We understand the importance of finding the right caregiver quickly. That’s why the majority of families
-					secure their perfect childcare match with us within just a week of making their request.
-				</h3>
-				<h3 className="lg:text-2xl text-lg font-semibold mb-3">
-					Let Marvellous Kids help you find the ideal childcare solution to support your family’s needs.
-				</h3>
+				<Slide delay={0.5} className="flex flex-col items-center justify-center text-white text-center h-full">
+					<h1 className="lg:text-6xl md:text-5xl text-4xl font-extrabold mb-5">
+						Where Care Meets Growth For Every Child
+					</h1>
+					<h3 className="lg:text-2xl text-lg font-semibold mb-8">
+						We understand the importance of finding the right caregiver quickly. That’s why the majority of families
+						secure their perfect childcare match with us within just a week of making their request.
+					</h3>
+					<h3 className="lg:text-2xl text-lg font-semibold mb-3">
+						Let Marvellous Kids help you find the ideal childcare solution to support your family’s needs.
+					</h3>
 
-				<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon">Join Us</button>
+					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon">Join Us</button>
+				</Slide>
 			</section>
 
 			{/* Emergency Solution */}
 			<section className="pb-20 flex flex-col space-y-10">
 				<div className="flex items-center lg:flex-row flex-col gap-10 md:px-14 px-5">
-					<div className="w-full">
+					<Slide towards="left" delay={0.5} className="w-full">
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold mt-2">Sudden Change Of Plans</h4>
 						<h1 className="lg:text-5xl text-4xl font-extrabold mb-3">Our Emergency Childcare Solution</h1>
 						<p className="mb-3">
@@ -175,7 +174,7 @@ const AdditionalPage = () => {
 							Rest assured, even in urgent situations, your child will be cared for by experienced and reliable hands.
 							We&apos;re here to provide peace of mind when you need it most.
 						</p>
-					</div>
+					</Slide>
 
 					<Image
 						className="w-full"

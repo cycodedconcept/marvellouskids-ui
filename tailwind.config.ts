@@ -18,6 +18,7 @@ export default {
 				welcome: "url('/assets/welcome.png')",
 				"welcome-cloud-design": "url('/assets/marvellous-cloud-design.png')",
 				"welcome-cloud": "url('/assets/home-cloud.png')",
+				"welcome-cloud-mobilie": "url('/assets/home-cloud-mobile.png')",
 
 				"dreams-begin": "url('/assets/where-little-dreams-begin.png')",
 				"dreams-begin2": "url('/assets/where-little-dreams-begin2.png')",

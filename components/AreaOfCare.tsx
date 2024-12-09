@@ -1,6 +1,6 @@
 import { Slide } from "@/animation/Slide";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 const AreaOfCare = () => {
 	const areaOfCare = [
@@ -56,9 +56,9 @@ const AreaOfCare = () => {
 						<h3 className="text-2xl font-bold pb-3">{area.title}</h3>
 						<p>{area.content}</p>
 						<div className="flex-grow"></div>
-						{/* <Link href="/" className="text-primary font-bold self-end mt-5">
+						<Link href="/" className="text-primary font-bold self-end mt-5">
 							Read More
-						</Link> */}
+						</Link>
 					</div>
 				))}
 			</Slide>

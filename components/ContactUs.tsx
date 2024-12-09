@@ -1,9 +1,10 @@
+import { Slide } from "@/animation/Slide";
 import Image from "next/image";
 
 const ContactUs = () => {
 	return (
 		<section className="bg-[#F9F7F8] md:px-14 px-5 py-20 flex lg:flex-row flex-col gap-y-10">
-			<div className="lg:w-[40%] w-full flex flex-col lg:pt-24">
+			<Slide towards="left" delay={0.5} className="lg:w-[40%] w-full flex flex-col lg:pt-24">
 				<Image
 					className="self-center mb-5"
 					src="/assets/circle-design.png"
@@ -17,7 +18,7 @@ const ContactUs = () => {
 						You&apos;ve Got Questions <br /> Feel Free to Ask
 					</h1>
 				</div>
-			</div>
+			</Slide>
 
 			<form className="lg:w-[60%] w-full flex flex-col space-y-5 lg:border-l-2 lg:pl-5 lg:border-l-black">
 				<div className="flex justify-between lg:space-x-10 space-x-2">

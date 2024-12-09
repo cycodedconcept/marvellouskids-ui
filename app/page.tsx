@@ -1,6 +1,7 @@
 import AreaOfCare from "@/components/AreaOfCare";
 import ContactUs from "@/components/ContactUs";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -30,9 +31,12 @@ export default function Home() {
 						free tax-funded childcare for eligible 2, 3, and 4-year-olds.
 					</p>
 
-					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon">
+					<Link
+						href="/area-of-care"
+						className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon md:w-fit w-full"
+					>
 						Explore More
-					</button>
+					</Link>
 				</div>
 
 				<Image

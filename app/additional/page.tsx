@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import ContactUs from "@/components/ContactUs";
 
 const AdditionalPage = () => {
@@ -126,9 +126,9 @@ const AdditionalPage = () => {
 							<h3 className="text-2xl font-bold pb-3">{area.title}</h3>
 							<p>{area.content}</p>
 							<div className="flex-grow"></div>
-							<Link href="/" className="text-primary font-bold self-end mt-5">
+							{/* <Link href="/" className="text-primary font-bold self-end mt-5">
 								Read More
-							</Link>
+							</Link> */}
 						</div>
 					))}
 				</div>

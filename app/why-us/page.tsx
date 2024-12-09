@@ -1,3 +1,4 @@
+import { Slide } from "@/animation/Slide";
 import AreaOfCare from "@/components/AreaOfCare";
 import Image from "next/image";
 
@@ -20,7 +21,7 @@ const WhyUsPage = () => {
 			</main>
 
 			{/* Opening and Closing Hours */}
-			<div className="md:px-14 px-5 py-10">
+			<Slide delay={0.5} className="md:px-14 px-5 py-10">
 				<div className="bg-primary text-white rounded-2xl p-10 flex md:flex-row flex-col items-center md:space-x-8 space-y-10">
 					<div>
 						<div className="flex space-x-2">
@@ -64,7 +65,7 @@ const WhyUsPage = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Slide>
 
 			{/* Our Story */}
 			<section className="relative flex md:flex-row flex-col items-center justify-between md:px-14 px-5 gap-10 pt-10 sm:pb-20">
@@ -73,7 +74,7 @@ const WhyUsPage = () => {
 					className="absolute hidden md:block left-0 -top-10 bg-no-repeat bg-contain h-[700px] w-[500px] -z-10"
 				/>
 
-				<div className="w-full">
+				<Slide towards="left" delay={0.5} className="w-full">
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Story</h4>
 					<h1 className="lg:text-5xl text-4xl font-extrabold">What Our Patients Tell Others About Pretty-Health</h1>
 					<p className="mt-5">
@@ -82,7 +83,7 @@ const WhyUsPage = () => {
 						feugiat ultricies. Pellentesque mollis tortor ut metus rutrum, a dapibus urna porta. Praesent scelerisque
 						libero at rutrum consequat.
 					</p>
-				</div>
+				</Slide>
 
 				<Image className="w-full" src="/assets/our-story.png" alt="Our Story" width={500} height={500} />
 			</section>
@@ -96,7 +97,7 @@ const WhyUsPage = () => {
 
 				<Image className="w-full" src="/assets/our-story.png" alt="Our Story" width={500} height={500} />
 
-				<div className="w-full">
+				<Slide towards="right" delay={0.5} className="w-full">
 					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Story</h4>
 					<h1 className="lg:text-5xl text-4xl font-extrabold">What Our Patients Tell Others About Pretty-Health</h1>
 					<p className="mt-5">
@@ -105,7 +106,7 @@ const WhyUsPage = () => {
 						feugiat ultricies. Pellentesque mollis tortor ut metus rutrum, a dapibus urna porta. Praesent scelerisque
 						libero at rutrum consequat.
 					</p>
-				</div>
+				</Slide>
 			</section>
 
 			{/* Cloud Design */}

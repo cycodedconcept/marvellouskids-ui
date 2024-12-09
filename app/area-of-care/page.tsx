@@ -1,5 +1,6 @@
 "use client";
 
+import { Slide } from "@/animation/Slide";
 import { sidebarContentData } from "@/data/sidebarContent";
 import Image from "next/image";
 import React from "react";
@@ -12,7 +13,7 @@ const AreaOfCare = () => {
 	return (
 		<div>
 			<main className="h-screen bg-dreams-begin2 bg-no-repeat bg-cover bg-right-top text-white lg:text-left text-center md:px-14 px-5 pt-40">
-				<div className="lg:w-2/3">
+				<Slide className="lg:w-2/3">
 					<h1 className="md:text-6xl sm:text-5xl text-4xl font-extrabold">
 						Where Little Dreams Begin and Families Thrive
 					</h1>
@@ -20,7 +21,7 @@ const AreaOfCare = () => {
 						Our professional team and flexible services, including trusted nanny support and free tax-funded childcare
 						for eligible families, are here to make parenting less stressful and more rewarding.
 					</p>
-				</div>
+				</Slide>
 			</main>
 
 			<section className="mt-10 mb-20 md:px-14 px-5 grid lg:grid-cols-3 grid-cols-1 lg:gap-x-5 gap-y-5">

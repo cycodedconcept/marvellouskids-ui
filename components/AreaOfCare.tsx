@@ -1,3 +1,4 @@
+import { Slide } from "@/animation/Slide";
 import Image from "next/image";
 // import Link from "next/link";
 
@@ -44,7 +45,7 @@ const AreaOfCare = () => {
 			<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">Area of Care</h4>
 			<h1 className="lg:text-5xl text-4xl font-extrabold text-center mb-[10rem]">Our Services</h1>
 
-			<div className="flex gap-x-10 gap-y-40 flex-wrap justify-center">
+			<Slide className="flex gap-x-10 gap-y-40 flex-wrap justify-center">
 				{areaOfCare.map((area) => (
 					<div
 						key={area.title}
@@ -60,7 +61,7 @@ const AreaOfCare = () => {
 						</Link> */}
 					</div>
 				))}
-			</div>
+			</Slide>
 		</section>
 	);
 };

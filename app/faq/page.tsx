@@ -1,4 +1,5 @@
 "use client";
+import { Slide } from "@/animation/Slide";
 import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
@@ -46,17 +47,18 @@ const FAQ = () => {
 
 			<div className="space-y-5">
 				{faqs.map((faq, index) => (
-					<div
-						key={index}
-						className="border border-primary p-5 rounded-lg cursor-pointer shadow-md"
-						onClick={() => setActiveIndex(index === activeIndex ? null : index)}
-					>
-						<div className="flex items-center justify-between">
-							<h3 className="text-lg font-semibold">{faq.question}</h3>
-							{activeIndex === index ? <FaMinus className="text-primary" /> : <FaPlus className="text-primary" />}
+					<Slide key={index} towards={index % 2 === 0 ? "left" : "right"} delay={0.5}>
+						<div
+							className="border border-primary p-5 rounded-lg cursor-pointer shadow-md"
+							onClick={() => setActiveIndex(index === activeIndex ? null : index)}
+						>
+							<div className="flex items-center justify-between">
+								<h3 className="text-lg font-semibold">{faq.question}</h3>
+								{activeIndex === index ? <FaMinus className="text-primary" /> : <FaPlus className="text-primary" />}
+							</div>
+							{activeIndex === index && <p className="mt-3 text-gray-500">{faq.answer}</p>}
 						</div>
-						{activeIndex === index && <p className="mt-3 text-gray-500">{faq.answer}</p>}
-					</div>
+					</Slide>
 				))}
 			</div>
 		</div>

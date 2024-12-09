@@ -5,33 +5,36 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 const FAQ = () => {
 	const faqs = [
 		{
-			question: "What services does your company provide in the oil trading industry?",
+			question: "What skills should a nanny have?",
 			answer:
-				"We try to bridge the gap between demand and supply, thereby providing oil supply within the West African coast, engaging in the buying and selling of crude oil, conducts thorough market analysis to assess supply and demand dynamics, price trends, adhering to strict compliance with international trade regulations, sanctions, and industry standards governing oil trading activities.",
+				"You should have experience of working with children, either as a nanny or in other childcare settings, as well as good organisational skills and the ability to cook.",
 		},
 		{
-			question: "What are the benefits of trading oil with your company?",
+			question: "Do nannies need qualifications?",
 			answer:
-				"We provide a comprehensive range of services, including oil trading, logistics, and risk management, ensuring that our clients receive the best possible service. Our team of experts is always on hand to provide advice and support, helping you to make the most of your oil trading activities.",
+				"Formal childcare qualifications are not needed though some clients do insist on this as part of their criteria. Some nannies do have childcare qualifications such as Cache, however some just have a good level of childcare experience, along with a paediatric first aid certificate and a valid DBS. Good references are also required.",
 		},
 		{
-			question: "How do I get started with oil trading?",
+			question: "Do nannies do housework?",
 			answer:
-				"If you are new to oil trading, we recommend that you start by learning the basics of the industry, including how oil prices are determined, how to read price charts, and how to place trades. Once you have a good understanding of the market, you can open an account with us and start trading oil.",
+				"Live-in nannies do anything relating to the children. In addition, you should be prepared to help with things such as running errands, family shopping etc., and ensuring you are flexible.",
 		},
 		{
-			question: "What are the risks involved in oil trading?",
+			question: "Do nannies get breaks?",
 			answer:
-				"Oil trading can be a risky business, as prices can be volatile and subject to sudden fluctuations. It is important to be aware of the risks involved and to have a clear risk management strategy in place. Our team of experts can help you to develop a risk management plan that is tailored to your individual needs and circumstances.",
+				"What your day as a live-in nanny looks like will largely depend on the ages of the children you are working with. If there are older children who are at school and/or nursery then there may be time during the day for a break. However, if the role has younger children then it may be more difficult - in this case we encourage nannies to take a break when the children are napping.",
 		},
 		{
-			question: "How can I contact your company for more information?",
-			answer:
-				"If you would like more information about our oil trading services, or if you have any questions about the industry, please feel free to contact us. Our team of experts is always on hand to provide advice and support, and we are happy to help in any way we can.",
+			question: "How many families can a nanny work for?",
+			answer: "As many as you want and your time allows for.",
+		},
+		{
+			question: "Can a nanny work from her own home?",
+			answer: "No",
 		},
 	];
 
-	const [activeIndex, setActiveIndex] = useState<number | null>(null);
+	const [activeIndex, setActiveIndex] = useState<number | null>(faqs[0] ? 0 : null);
 
 	return (
 		<div className="md:px-14 px-5 mb-20">

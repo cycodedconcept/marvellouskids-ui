@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${ItimFont.className} text-textColor`}>
+			<body className={`${ItimFont.className} text-textColor overflow-x-hidden`}>
 				<NavBar />
 				{children}
 				<Footer />

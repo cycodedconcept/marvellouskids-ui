@@ -73,11 +73,12 @@ const AdditionalPage = () => {
 				<div className="flex items-center md:flex-row-reverse flex-col gap-10 md:px-14 px-5">
 					<Slide towards="right" delay={0.5} className="w-full">
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold mt-2">We Are Your Trusted Partner</h4>
-						<h1 className="lg:text-5xl text-4xl font-extrabold">Finding the Perfect Match</h1>
+						<h1 className="lg:text-5xl text-4xl font-extrabold">Flexible and Reliable Solutions</h1>
 						<p className="text-lg mt-2">
-							We take the time to match families with the ideal caregiver by considering key factors such as the
-							child&apos;s age, specific requirements, experience level, and expectations. Our goal is to connect you
-							with the best-suited childcare professional for your unique needs.
+							We offer a wide range of services designed to fit seamlessly into your schedule. Whether you need
+							part-time, full-time, after-school, weekend, or overnight care, we&apos;ve got you covered. We&apos;re
+							also available to support families during emergencies, ensuring you always have reliable childcare when it
+							matters most.
 						</p>
 					</Slide>
 

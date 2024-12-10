@@ -8,12 +8,12 @@ export default function Home() {
 	return (
 		<div>
 			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom sm:pt-10 pt-28 md:px-20 px-5 flex flex-col sm:items-start items-center">
-				<Slide className="md:bg-welcome-cloud bg-welcome-cloud-mobilie lg:bg-cover bg-contain bg-no-repeat sm:h-[561.41px] sm:w-[643px] h-[23rem] w-[23rem] sm:pt-10 pt-14 flex flex-col items-center sm:justify-center text-center">
+				<Slide className="md:bg-welcome-cloud bg-welcome-cloud-mobilie lg:bg-cover bg-contain bg-no-repeat sm:h-[561.41px] sm:w-[643px] h-[26rem] w-[26rem] sm:pt-10 pt-14 sm:px-0 px-5 flex flex-col items-center sm:justify-center text-center">
 					<h3 className="sm:text-3xl text-lg font-semibold">Welcome To</h3>
 					<h1 className="sm:text-6xl text-3xl text-primary font-extrabold mb-3">
 						Marvellous Kids Childcare & Nanny Services
 					</h1>
-					<h3 className="sm:text-3xl text-lg font-semibold sm:pr-20 pr-8 mb-5">
+					<h3 className="sm:text-3xl text-lg font-semibold sm:pr-20 mb-5">
 						Caring for Your Children, Supporting Your Family.
 					</h3>
 

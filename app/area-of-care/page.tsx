@@ -58,13 +58,13 @@ const AreaOfCare = () => {
 								);
 							case "h2":
 								return (
-									<h2 key={index} className="text-3xl font-bold mt-5">
+									<h2 key={index} className="text-3xl font-bold mt-5 text-darkBlue">
 										{item.text}
 									</h2>
 								);
 							case "h5":
 								return (
-									<h5 key={index} className="text-2xl font-semibold mt-5">
+									<h5 key={index} className="text-2xl font-semibold mt-5 text-darkBlue">
 										{item.text}
 									</h5>
 								);
@@ -76,9 +76,17 @@ const AreaOfCare = () => {
 								);
 							case "list":
 								return (
-									<ul key={index} className="list-none mt-5">
+									<ul key={index} className={`list-none mt-5`}>
 										{item?.items?.map((listItem, index) => (
-											<li key={index} className="before:content-['✔'] before:mr-2 before:text-green-500">
+											<li
+												key={index}
+												className={`${
+													item.listType === "ordered"
+														? "list-decimal"
+														: "before:content-['✔'] before:absolute before:-left-5"
+												} relative
+												 before:mr-2 before:text-green-500`}
+											>
 												{listItem}
 											</li>
 										))}

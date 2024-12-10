@@ -30,7 +30,7 @@ const ContactUs = () => {
 							type="text"
 							id="firstname"
 							placeholder="Enter you First Name"
-							className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+							className="h-14 px-2 border border-black rounded-md bg-white w-full"
 						/>
 					</div>
 					<div className="flex flex-col w-full">
@@ -41,7 +41,7 @@ const ContactUs = () => {
 							type="text"
 							id="lastname"
 							placeholder="Enter your Last Name"
-							className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+							className="h-14 px-2 border border-black rounded-md bg-white w-full"
 						/>
 					</div>
 				</div>
@@ -55,7 +55,7 @@ const ContactUs = () => {
 							type="email"
 							id="email"
 							placeholder="Enter your Email"
-							className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+							className="h-14 px-2 border border-black rounded-md bg-white w-full"
 						/>
 					</div>
 					<div className="flex flex-col w-full">
@@ -66,7 +66,7 @@ const ContactUs = () => {
 							type="tel"
 							id="phone"
 							placeholder="Enter your Phone Number"
-							className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+							className="h-14 px-2 border border-black rounded-md bg-white w-full"
 						/>
 					</div>
 				</div>
@@ -76,7 +76,7 @@ const ContactUs = () => {
 						Message
 					</label>
 					<textarea
-						className="px-2 border-2 border-black rounded-md bg-white w-full"
+						className="px-2 border border-black rounded-md bg-white w-full"
 						id="message"
 						placeholder="Enter your Message"
 						cols={30}

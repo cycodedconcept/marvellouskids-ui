@@ -93,7 +93,7 @@ const AdditionalPage = () => {
 			</section>
 
 			{/* CTA */}
-			<Slide className="flex flex-col items-center space-y-5 md:px-14 px-5 text-center mb-20">
+			<Slide className="flex flex-col items-center space-y-5 md:px-20 px-5 text-center mb-20">
 				<p className="md:text-2xl text-lg font-semibold">
 					At Marvellous Kids, we are more than just a childcare provider—we are your trusted partner in ensuring your
 					children are cared for with love, attention, and professionalism.
@@ -165,17 +165,17 @@ const AdditionalPage = () => {
 					<Slide towards="left" delay={0.5} className="w-full">
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold mt-2">Sudden Change Of Plans</h4>
 						<h1 className="lg:text-5xl text-4xl font-extrabold mb-3">Our Emergency Childcare Solution</h1>
-						<p className="mb-3">
+						<p className="mb-3 text-lg">
 							Has your regular childcare arrangement fallen through at the last minute? Or perhaps your child has taken
 							ill, and you need immediate support? Don&apos;t worry—Marvellous Kids Childcare and Nanny Services is here
 							to help!
 						</p>
-						<p className="mb-3">
+						<p className="mb-3 text-lg">
 							With our quick-response system, you can find emergency childcare or a professional caregiver for a sick
 							child who&apos;s ready to step in without delay. Simply contact us directly to discuss your needs, and
 							we&apos;ll connect you with a trusted nanny or babysitter.
 						</p>
-						<p>
+						<p className="text-lg">
 							Rest assured, even in urgent situations, your child will be cared for by experienced and reliable hands.
 							We&apos;re here to provide peace of mind when you need it most.
 						</p>

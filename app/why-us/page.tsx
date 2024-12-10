@@ -34,11 +34,17 @@ const WhyUsPage = () => {
 						</div>
 
 						<p className="text-lg mt-5">
-							Vestibulum sagittis arcu in nulla ultrices tempus. Pellentesque nec fringilla dolor. In egestas faucibus
-							dui, ac accumsan dui euismod vitae. Morbi laoreet nec justo eget
+							Marvellous Kids Childcare and Nanny Services is here to meet your needs. We are committed to making a
+							positive difference in the lives of children and their families.
 						</p>
 
-						<h2 className="text-2xl font-semibold mt-10">Call: 0 - 123-456-7890</h2>
+						<div className="text-2xl font-semibold mt-10">
+							<h2>Call:</h2>
+							<div className="ml-14">
+								<h2> 020 - 3624 - 6795</h2>
+								<h2> 079 - 4790 - 0277</h2>
+							</div>
+						</div>
 					</div>
 
 					<div>
@@ -53,13 +59,8 @@ const WhyUsPage = () => {
 
 						<div className="mt-14 flex flex-col space-y-5 text-lg">
 							<ul className="flex items-center justify-between">
-								<li>Mon - Wed</li>
-								<li>10:00AM -04:00PM</li>
-							</ul>
-
-							<ul className="flex items-center justify-between">
-								<li>Thurs - Fri</li>
-								<li>10:00AM -04:00PM</li>
+								<li>Mon - Fri</li>
+								<li>07:00AM -06:00PM</li>
 							</ul>
 
 							<ul className="flex items-center justify-between">
@@ -79,13 +80,13 @@ const WhyUsPage = () => {
 				/>
 
 				<Slide towards="left" delay={0.5} className="w-full">
-					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Story</h4>
-					<h1 className="lg:text-5xl text-4xl font-extrabold">What Our Patients Tell Others About Pretty-Health</h1>
-					<p className="mt-5">
-						Vestibulum sagittis arcu in nulla ultrices tempus. Pellentesque nec fringilla dolor. In egestas faucibus
-						dui, ac accumsan dui euismod vitae. Morbi laoreet nec justo eget placerat. Nullam vel augue quis sapien
-						feugiat ultricies. Pellentesque mollis tortor ut metus rutrum, a dapibus urna porta. Praesent scelerisque
-						libero at rutrum consequat.
+					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Mission Statement</h4>
+					<h1 className="lg:text-5xl text-4xl font-extrabold">Our Mission At Marvellous Kids Childcare LTD</h1>
+					<p className="mt-5 text-lg">
+						It is to provide a warm, safe, and stimulating environment where every child is nurtured and encouraged to
+						grow. We are passionate about fostering creativity, building confidence, and supporting children in their
+						journey to reach their full potential. Every day, we aim to create a space where children feel valued,
+						loved, and inspired to learn.
 					</p>
 				</Slide>
 
@@ -102,13 +103,13 @@ const WhyUsPage = () => {
 				<Image className="w-full" src="/assets/our-story.png" alt="Our Story" width={500} height={500} />
 
 				<Slide towards="right" delay={0.5} className="w-full">
-					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Story</h4>
-					<h1 className="lg:text-5xl text-4xl font-extrabold">What Our Patients Tell Others About Pretty-Health</h1>
-					<p className="mt-5">
-						Vestibulum sagittis arcu in nulla ultrices tempus. Pellentesque nec fringilla dolor. In egestas faucibus
-						dui, ac accumsan dui euismod vitae. Morbi laoreet nec justo eget placerat. Nullam vel augue quis sapien
-						feugiat ultricies. Pellentesque mollis tortor ut metus rutrum, a dapibus urna porta. Praesent scelerisque
-						libero at rutrum consequat.
+					<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Vision Statement</h4>
+					<h1 className="lg:text-5xl text-4xl font-extrabold">Our Vision For Marvellous Kids Childcare LTD</h1>
+					<p className="mt-5 text-lg">
+						We want to become a trusted and respected name in childcare, known for providing exceptional care and
+						education. I see a future where every child who comes through our doors feels empowered, celebrated, and
+						ready to take on the world with curiosity and confidence. Together, we&apos;re not just shaping little minds
+						- we&apos;re shaping brighter futures.
 					</p>
 				</Slide>
 			</section>

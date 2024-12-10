@@ -26,7 +26,7 @@ const WhyUsPage = () => {
 
 			{/* Opening and Closing Hours */}
 			<Slide delay={0.5} className="md:px-14 px-5 py-10">
-				<div className="bg-primary text-white rounded-2xl p-10 flex md:flex-row flex-col items-center md:space-x-8 space-y-10">
+				<div className="bg-primary text-white rounded-2xl md:p-10 p-5 flex md:flex-row flex-col items-center md:space-x-8 space-y-10">
 					<div>
 						<div className="flex space-x-2">
 							<Image src="/assets/heartbeat.png" width={35} height={35} alt="Heartbeat" />
@@ -40,7 +40,7 @@ const WhyUsPage = () => {
 
 						<div className="text-2xl font-semibold mt-10">
 							<h2>Call:</h2>
-							<div className="ml-14">
+							<div className="md:ml-14">
 								<h2> 020 - 3624 - 6795</h2>
 								<h2> 079 - 4790 - 0277</h2>
 							</div>

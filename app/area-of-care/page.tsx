@@ -30,7 +30,7 @@ const AreaOfCare = () => {
 					{sidebarContent.map((content) => (
 						<div
 							key={content.title}
-							className={`text-xl p-2 flex items-center justify-between border-2 border-black rounded-full hover:bg-gray-100 cursor-pointer ${
+							className={`text-xl p-2 flex items-center justify-between border border-black rounded-full hover:bg-gray-100 cursor-pointer ${
 								activeContent.title === content.title ? "bg-gray-100" : ""
 							}`}
 							onClick={() => setActiveContent(content)}
@@ -103,7 +103,7 @@ const AreaOfCare = () => {
 									type="text"
 									id="firstname"
 									placeholder="Enter you First Name"
-									className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+									className="h-14 px-2 border border-black rounded-md bg-white w-full"
 								/>
 							</div>
 							<div className="flex flex-col w-full">
@@ -114,7 +114,7 @@ const AreaOfCare = () => {
 									type="text"
 									id="lastname"
 									placeholder="Enter your Last Name"
-									className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+									className="h-14 px-2 border border-black rounded-md bg-white w-full"
 								/>
 							</div>
 						</div>
@@ -128,7 +128,7 @@ const AreaOfCare = () => {
 									type="email"
 									id="email"
 									placeholder="Enter your Email"
-									className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+									className="h-14 px-2 border border-black rounded-md bg-white w-full"
 								/>
 							</div>
 							<div className="flex flex-col w-full">
@@ -139,7 +139,7 @@ const AreaOfCare = () => {
 									type="tel"
 									id="phone"
 									placeholder="Enter your Phone Number"
-									className="h-14 px-2 border-2 border-black rounded-md bg-white w-full"
+									className="h-14 px-2 border border-black rounded-md bg-white w-full"
 								/>
 							</div>
 						</div>
@@ -149,7 +149,7 @@ const AreaOfCare = () => {
 								Message
 							</label>
 							<textarea
-								className="px-2 border-2 border-black rounded-md bg-white w-full"
+								className="px-2 border border-black rounded-md bg-white w-full"
 								id="message"
 								placeholder="Enter your Message"
 								cols={30}

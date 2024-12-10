@@ -34,7 +34,7 @@ export default function Home() {
 
 					<Link
 						href="/area-of-care"
-						className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon md:w-fit w-full"
+						className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon md:w-fit w-full text-lg"
 					>
 						Explore More
 					</Link>

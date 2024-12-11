@@ -86,7 +86,7 @@ export default function Home() {
 							towards={index % 2 === 0 ? "left" : "right"}
 							delay={0.5}
 						>
-							<Image src={env.src} alt={env.alt} width={500} height={500} />
+							<Image src={env.src} alt={env.alt} width={500} height={500} quality={100} />
 						</Slide>
 					))}
 				</div>

@@ -5,6 +5,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+	const environment = [
+		{ src: "/assets/environment1.png", alt: "Environment 1" },
+		{ src: "/assets/environment2.png", alt: "Environment 2" },
+		{ src: "/assets/environment3.png", alt: "Environment 3" },
+		{ src: "/assets/environment4.png", alt: "Environment 4" },
+		{ src: "/assets/environment5.png", alt: "Environment 5" },
+		{ src: "/assets/environment6.png", alt: "Environment 6" },
+		{ src: "/assets/environment7.png", alt: "Environment 7" },
+		{ src: "/assets/environment8.png", alt: "Environment 8" },
+		{ src: "/assets/environment9.png", alt: "Environment 9" },
+		{ src: "/assets/environment10.png", alt: "Environment 10" },
+		{ src: "/assets/environment11.png", alt: "Environment 11" },
+		{ src: "/assets/environment12.png", alt: "Environment 12" },
+	];
+
 	return (
 		<div>
 			<main className="bg-welcome h-[calc(100vh+5rem)] w-full bg-no-repeat bg-cover bg-bottom sm:pt-10 pt-28 md:px-20 px-5 flex flex-col sm:items-start items-center">
@@ -58,18 +73,21 @@ export default function Home() {
 			<AreaOfCare />
 
 			<section className="py-20">
-				<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">Our Space</h4>
-				<h1 className="lg:text-5xl text-4xl font-extrabold text-center mb-10">Explore Our Environment</h1>
+				<Slide delay={0.5}>
+					<h4 className="lg:text-2xl text-lg text-primary font-semibold text-center">Our Space</h4>
+					<h1 className="lg:text-5xl text-4xl font-extrabold text-center mb-10">Explore Our Environment</h1>
+				</Slide>
 
-				<div className="grid grid-cols-4">
-					{Array.from({ length: 12 }).map((_, index) => (
-						<Image
-							key={index}
-							src="/assets/free-tax-funded-square.png"
-							alt="Free Tax Funded"
-							width={500}
-							height={500}
-						/>
+				<div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+					{environment.map((env, index) => (
+						<Slide
+							key={env.alt}
+							className="flex items-center justify-center"
+							towards={index % 2 === 0 ? "left" : "right"}
+							delay={0.5}
+						>
+							<Image src={env.src} alt={env.alt} width={500} height={500} />
+						</Slide>
 					))}
 				</div>
 			</section>

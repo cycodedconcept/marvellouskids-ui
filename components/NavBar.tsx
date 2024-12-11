@@ -8,9 +8,16 @@ import { useState } from "react";
 const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "Why us", href: "/why-us" },
-	{ name: "Area of Care", href: "/area-of-care", sub: { name: "Additional", href: "/additional" } },
+	{ name: "Area of Care", href: "/area-of-care", sub: [{ name: "Additional", href: "/additional" }] },
 	{ name: "Our Space", href: "#" },
-	{ name: "More", href: "/faq", sub: { name: "FAQ", href: "/faq" } },
+	{
+		name: "More",
+		href: "/faq",
+		sub: [
+			{ name: "FAQ", href: "/faq" },
+			{ name: "Find a Job", href: "/find-jobs" },
+		],
+	},
 ];
 
 const NavBar = () => {
@@ -61,13 +68,13 @@ const NavBar = () => {
 
 								{sub && showDropdown === name && (
 									<ul className="absolute bg-white p-2 top-5 left-0 w-40 shadow-lg">
-										<li
-											className={`p-2 hover:bg-gray-100 ${
-												pathname === sub.href && "bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon"
-											}`}
-										>
-											<Link href={sub.href}>{sub.name}</Link>
-										</li>
+										{sub.map(({ name, href }) => (
+											<li key={name} className="hover:bg-gray-100 rounded p-2">
+												<Link href={href} onClick={() => setActiveNav(href)}>
+													{name}
+												</Link>
+											</li>
+										))}
 									</ul>
 								)}
 							</div>
@@ -114,11 +121,13 @@ const NavBar = () => {
 								{/* Dropdown for mobile */}
 								{sub && showDropdown === name && (
 									<ul className="mt-2 ml-4 space-y-2 text-gray-600 rounded-lg">
-										<li className=" hover:bg-gray-100 rounded p-2">
-											<Link href={sub.href} onClick={() => closeMobileNav()}>
-												{sub.name}
-											</Link>
-										</li>
+										{sub.map(({ name, href }) => (
+											<li key={name}>
+												<Link href={href} onClick={() => closeMobileNav()}>
+													{name}
+												</Link>
+											</li>
+										))}
 									</ul>
 								)}
 							</li>

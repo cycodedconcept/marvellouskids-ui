@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const ItimFont = Itim({
 	weight: "400",
-	subsets: ["latin-ext"],
+	subsets: ["latin"],
 });
 
 export default function RootLayout({

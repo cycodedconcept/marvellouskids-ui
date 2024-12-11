@@ -60,53 +60,179 @@ export const sidebarContentData = [
 			},
 		],
 	},
+];
 
-	// {
-	// 	title: "Medicine & Nephrology",
-	// 	content: [
-	// 		{ type: "img", src: "/assets/care-for-every-child.png", alt: "Nephrology Care Image" },
-	// 		{ type: "h2", text: "Advanced Medicine & Nephrology Care" },
-	// 		{
-	// 			type: "p",
-	// 			text: "Our state-of-the-art Nephrology department provides cutting-edge care for patients with kidney-related conditions. From advanced diagnostics to personalized treatment plans, we are committed to ensuring the best outcomes for every patient.",
-	// 		},
-	// 		{ type: "h5", text: "Comprehensive Services Include:" },
-	// 		{
-	// 			type: "list",
-	// 			items: [
-	// 				"Chronic kidney disease (CKD) management",
-	// 				"Dialysis and home dialysis programs",
-	// 				"Kidney transplantation services",
-	// 				"Preventive care for kidney health",
-	// 			],
-	// 		},
-	// 		{ type: "h5", text: "Why Choose Us?" },
-	// 		{
-	// 			type: "p",
-	// 			text: "Our multidisciplinary team consists of highly skilled nephrologists, nurses, and dietitians who work together to provide holistic care. We also emphasize patient education, empowering individuals to manage their kidney health effectively.",
-	// 		},
-	// 		{
-	// 			type: "p",
-	// 			text: "Through research and innovation, we strive to lead in the field of nephrology. With a focus on compassion and precision, we offer treatments tailored to meet the unique needs of each patient.",
-	// 		},
-	// 		{ type: "h5", text: "Support for Families and Patients" },
-	// 		{
-	// 			type: "p",
-	// 			text: "We recognize the importance of family in the healing process. Our support programs provide counseling, dietary advice, and resources to help patients and their loved ones navigate their health journey.",
-	// 		},
-	// 		{
-	// 			type: "list",
-	// 			items: [
-	// 				"Access to nutritional and lifestyle counseling",
-	// 				"Support groups for patients with CKD",
-	// 				"Education sessions on dialysis and transplantation",
-	// 				"24/7 access to medical specialists",
-	// 			],
-	// 		},
-	// 		{
-	// 			type: "p",
-	// 			text: "By choosing our Nephrology department, you gain access to a comprehensive care ecosystem designed to enhance quality of life and achieve optimal health outcomes.",
-	// 		},
-	// 	],
-	// },
+export const sidebarContent_JOB = [
+	{
+		title: "Live-In Nanny Job Description",
+		content: [
+			{ type: "img", src: "/assets/part-time-childcare.png", alt: "Intro Image" },
+			{ type: "h2", text: "Live-In Nanny Job Description" },
+			{
+				type: "p",
+				text: "Being a Live-in Nanny has many perks and can be one of the most rewarding roles in childcare with bonds being made that last a lifetime. If you want to become a Live-in Nanny, here are the answers to some commonly asked questions:",
+			},
+			{
+				type: "h5",
+				text: "Live-In Nanny Duties, Responsibilities & Skills What are the duties and responsibilities of a live-in nanny?",
+			},
+			{
+				type: "p",
+				text: "The responsibilities of a live-in nanny include anything related to the children. This could be",
+			},
+			{
+				type: "list",
+				listType: "unordered",
+				items: [
+					"doing the children's laundry and ironing",
+					"changing the children's bed linen",
+					"cooking for the children",
+					"organising clothes/toys",
+					"shopping relating to the children",
+					"school runs",
+					"arranging activities inside and outside the home",
+					"and anything else related to childcare",
+				],
+			},
+			{
+				type: "h5",
+				text: "What skills should a nanny have?",
+			},
+			{
+				type: "p",
+				text: "You should have experience of working with children, either as a nanny or in other childcare settings, as well as good organisational skills and the ability to cook.",
+			},
+			{ type: "h5", text: "Do nannies need qualifications?" },
+			{
+				type: "p",
+				text: "Formal childcare qualifications are not needed though some clients do insist on this as part of their criteria. Some nannies do have childcare qualifications such as Cache, however some just have a good level of childcare experience, along with a paediatric first aid certificate and a valid DBS. Good references are also required.",
+			},
+			{ type: "h5", text: "Do nannies do housework?" },
+			{
+				type: "p",
+				text: "Live-in nannies do anything relating to the children. In addition, you should be prepared to help with things such as running errands, family shopping etc., and ensuring you are flexible.",
+			},
+			{ type: "h5", text: "Do nannies get breaks?" },
+			{
+				type: "p",
+				text: "What your day as a live-in nanny looks like will largely depend on the ages of the children you are working with. If there are older children who are at school and/or nursery then there may be time during the day for a break. However, if the role has younger children then it may be more difficult - in this case we encourage nannies to take a break when the children are napping.",
+			},
+			{ type: "h5", text: "How many families can a nanny work for?" },
+			{ type: "p", text: "As many as you want and your time allows for." },
+			{ type: "h5", text: "Can a nanny work from her own home?" },
+			{ type: "p", text: "No." },
+			{ type: "h5", text: "Live-In Nanny Career" },
+			{ type: "h5", text: "Is being a live-in nanny a career?" },
+			{
+				type: "p",
+				text: "Definitely, nannies are sought after especially if you have a strong CV with no gaps and good references. Some people work as nannies for many, many years and become well-known in the industry.",
+			},
+			{ type: "h5", text: "How can I become a qualified nanny?" },
+			{
+				type: "p",
+				text: "You can do a two-year childcare qualification, such as a CACHE level 3. Any other shorter courses are always useful too. There are many colleges around London and outside of London that offer Cache courses.",
+			},
+			{
+				type: "h5",
+				text: "Can I be self-employed as a nanny?",
+			},
+			{
+				type: "p",
+				text: "Not unless you only work in temporary nanny roles.",
+			},
+			{
+				type: "h5",
+				text: "Do nannies have to be registered?",
+			},
+			{
+				type: "p",
+				text: "Not necessarily although you can join the OFSTED Voluntary Nanny register. Some employers ask for this so it’s a good idea and will give you a better chance of getting a job.",
+			},
+			{
+				type: "h5",
+				text: "What are the pro & cons of being a live-in nanny?",
+			},
+			{
+				type: "p",
+				text: "Pros",
+			},
+			{
+				type: "list",
+				listType: "unordered",
+				items: [
+					"An excellent salary compared with other childcare roles, combined with not having to pay rent",
+					"Working with children in their own environment",
+					"1 to 1 focus with the children you look after",
+					"Forming lifelong bonds and becoming part of a family",
+					"Having flexibility to plan your own day, do fun activities with the child and be more spontaneous",
+					"If you have had longevity with a family as a live In nanny this will strengthen your CV as it shows you are flexible and loyal, two very important characteristics of an exceptional live-in nanny",
+				],
+			},
+			{ type: "p", text: "Cons" },
+			{
+				type: "list",
+				listType: "unordered",
+				items: ["Longer hours (often for live-in nannies)", "Sharing your space with a family"],
+			},
+			{ type: "h5", text: "Live-In Nanny Salary" },
+			{ type: "h5", text: "How much does a live-in nanny earn?" },
+			{
+				type: "p",
+				text: "A live-in nanny currently earns £26,500-£35,000 gross per year on average, based on a Monday to Friday role, working up to 60 hours per week. Find out more on the average nanny salaries page.",
+			},
+			{ type: "h5", text: "How are nannies paid?" },
+			{
+				type: "p",
+				text: "Nannies are paid through a payroll company, such as NannyTax. Your salary is paid directly into your bank account, usually monthly.",
+			},
+			{ type: "h5", text: "Do nannies get paid vacation?" },
+			{
+				type: "p",
+				text: "Yes. In most households you get 28 days paid holidays per year inclusive of bank holidays. This is for nannies working a five-day week, if you work less days then the holiday will be calculated pro-rata however it is down to your employer and what is on your contract – flexibility is always important to ensure you and the family are in agreement as to when is the most convenient time for you to take holidays.",
+			},
+			{
+				type: "h5",
+				text: "How many hours does a full-time live-in nanny work, compared to a full-time live-out nanny?",
+			},
+			{
+				type: "p",
+				text: "Live-out nannies usually work 45-55 hours per week, while live-in nannies usually work a 60-hour week, plus two evenings babysitting.",
+			},
+			{
+				type: "h5",
+				text: "What is the usual accommodation provided for a live-in nanny?",
+			},
+			{
+				type: "p",
+				text: "Live-in nannies get their own bedroom and sometimes their own bathroom and in some households you will get separate accommodation.",
+			},
+			{
+				type: "h5",
+				text: "Do live-in nannies pay rent?",
+			},
+			{
+				type: "p",
+				text: "No",
+			},
+			{
+				type: "p",
+				text: "Nanny vs. Childminder",
+			},
+			{ type: "h5", text: "What is the difference between a nanny and a childminder?" },
+			{
+				type: "p",
+				text: "A childminder cares for children in their own home whereas a Nanny works in the family’s home and is an integral part of the family.",
+			},
+			{
+				type: "p",
+				text: "Nanny vs. Au pair",
+			},
+			{ type: "h5", text: "What is the difference between a nanny and an au pair?" },
+			{
+				type: "p",
+				text: "An au pair doesn’t necessarily have any previous childcare experience. Au pairs come to the UK to learn English/study so therefore can only work part-time and they rarely have childcare qualifications.",
+			},
+			{ type: "p", text: "You can view our latest Nanny vacancies here." },
+		],
+	},
 ];

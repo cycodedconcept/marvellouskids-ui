@@ -1,9 +1,9 @@
 import { Slide } from "@/animation/Slide";
-import { environment_API } from "@/data/ourEnvironment";
+import { fullEnvironment_API } from "@/data/ourEnvironment";
 import Image from "next/image";
 
 const OurEnvironment = () => {
-	const environment = environment_API;
+	const environment = fullEnvironment_API;
 
 	return (
 		<div className="mb-14">

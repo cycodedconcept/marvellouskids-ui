@@ -16,6 +16,7 @@ const navLinks = [
 		sub: [
 			{ name: "FAQ", href: "/faq" },
 			{ name: "Find a Job", href: "/find-jobs" },
+			{ name: "Our Environment", href: "/our-environment" },
 		],
 	},
 ];

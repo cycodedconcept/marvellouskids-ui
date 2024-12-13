@@ -6,7 +6,7 @@ const OurEnvironment = () => {
 	const environment = environment_API;
 
 	return (
-		<div>
+		<div className="mb-14">
 			<div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
 				{environment.map((env, index) => (
 					<Slide

@@ -8,7 +8,7 @@ import { useState } from "react";
 const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "Why us", href: "/why-us" },
-	{ name: "Area of Care", href: "/area-of-care", sub: [{ name: "Additional", href: "/additional" }] },
+	{ name: "Area of Care", href: "/area-of-care" },
 	{ name: "Our Space", href: "#" },
 	{
 		name: "More",
@@ -17,6 +17,7 @@ const navLinks = [
 			{ name: "FAQ", href: "/faq" },
 			{ name: "Find a Job", href: "/find-jobs" },
 			{ name: "Our Environment", href: "/our-environment" },
+			{ name: "Our Solution", href: "/our-solution" },
 		],
 	},
 ];

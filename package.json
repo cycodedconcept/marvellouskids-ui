@@ -9,10 +9,11 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"motion": "^12.0.0-alpha.2",
+		"@formspree/react": "^2.5.1",
+		"framer-motion": "^11.14.4",
 		"next": "15.0.3",
-		"react": "19.0.0-rc-66855b96-20241106",
-		"react-dom": "19.0.0-rc-66855b96-20241106",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"react-icons": "^5.4.0"
 	},
 	"devDependencies": {

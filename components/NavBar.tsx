@@ -15,7 +15,7 @@ const navLinks = [
 		href: "/faq",
 		sub: [
 			{ name: "FAQ", href: "/faq" },
-			{ name: "Find a Job", href: "/find-jobs" },
+			// { name: "Find a Job", href: "/find-jobs" },
 			{ name: "Our Environment", href: "/our-environment" },
 			{ name: "Our Solution", href: "/our-solution" },
 		],

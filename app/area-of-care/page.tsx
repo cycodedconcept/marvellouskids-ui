@@ -2,6 +2,7 @@
 
 import { Slide } from "@/animation/Slide";
 import { sidebarContentData } from "@/data/sidebarContent";
+import ContactUsForm from "@/ui/ContactUsForm";
 import Image from "next/image";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
@@ -101,7 +102,9 @@ const AreaOfCare = () => {
 					<h5 className="text-2xl font-semibold mt-5">Information for new Patient</h5>
 					<p className="text-lg mb-5">Your email address will not be published. Required fields are marked</p>
 
-					<form className="w-full flex flex-col space-y-5 lg:border-l-2 lg:pl-5 lg:border-l-black">
+					<ContactUsForm />
+
+					{/* <form className="w-full flex flex-col space-y-5 lg:border-l-2 lg:pl-5 lg:border-l-black">
 						<div className="flex justify-between lg:space-x-10 space-x-2">
 							<div className="flex flex-col w-full">
 								<label htmlFor="firstname" className="text-lg">
@@ -180,7 +183,7 @@ const AreaOfCare = () => {
 								Submit
 							</button>
 						</div>
-					</form>
+					</form> */}
 				</div>
 			</section>
 		</div>

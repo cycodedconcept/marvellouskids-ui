@@ -4,7 +4,7 @@ import ContactUs from "@/components/ContactUs";
 import { Slide } from "@/animation/Slide";
 import Link from "next/link";
 
-const AdditionalPage = () => {
+const OurSolution = () => {
 	const areaOfCare = [
 		{
 			title: "Free Tax-Funded Childcare for 2, 3, and 4-Year-Olds",
@@ -196,4 +196,4 @@ const AdditionalPage = () => {
 	);
 };
 
-export default AdditionalPage;
+export default OurSolution;

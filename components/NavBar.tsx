@@ -102,7 +102,7 @@ const NavBar = () => {
 				{/* Mobile Navigation */}
 				<nav
 					className={`absolute bg-white w-full left-0 p-5 -z-10 md:hidden flex flex-col transition-all duration-300 ease-in-out ${
-						mobileNav ? "top-20" : "-top-96"
+						mobileNav ? "top-20" : "-top-[35rem]"
 					}`}
 				>
 					<ul>

@@ -31,5 +31,4 @@ export const fullEnvironment_API = [
 	{ src: "/assets/environment15.png", alt: "Environment 15" },
 	{ src: "/assets/environment16.png", alt: "Environment 16" },
 	{ src: "/assets/environment17.png", alt: "Environment 17" },
-	{ src: "/assets/environment18.png", alt: "Environment 18" },
 ];

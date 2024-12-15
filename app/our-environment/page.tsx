@@ -11,7 +11,7 @@ const OurEnvironment = () => {
 				{environment.map((env, index) => (
 					<Slide
 						key={env.alt}
-						className="flex items-center justify-center"
+						className="flex items-center justify-center border-[1rem] border-darkBlue"
 						towards={index % 2 === 0 ? "left" : "right"}
 						delay={0.5}
 					>

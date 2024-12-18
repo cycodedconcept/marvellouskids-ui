@@ -321,7 +321,7 @@ const Nanny = () => {
 					{/* Terms and Submit Button */}
 					<div className="flex sm:flex-row flex-col sm:items-center justify-between space-y-3">
 						<div>
-							<input type="checkbox" id="terms" className="accent-primary" required />
+							<input type="checkbox" id="terms" className="accent-primary" />
 							<label htmlFor="terms" className="text-lg ml-3">
 								I agree with Terms of Use and Privacy Policy
 							</label>

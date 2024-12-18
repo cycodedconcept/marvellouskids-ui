@@ -2,13 +2,22 @@
 
 import { Slide } from "@/animation/Slide";
 import { sidebarContent_JOB } from "@/data/sidebarContent";
-import { useForm, ValidationError } from "@formspree/react";
+import { useCountries } from "@/hook/useCountries";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { FaArrowRight } from "react-icons/fa";
 
-const FindJobs = () => {
+type NannyData = {
+	name: string;
+	email: string;
+	phone: string;
+	country: string;
+	document: FileList;
+};
+
+const Nanny = () => {
 	const data = [
 		{
 			color: "#B0FFAE",
@@ -36,19 +45,42 @@ const FindJobs = () => {
 		},
 	];
 
-	const [state, handleSubmit] = useForm("xpwzevjr");
 	const sidebarContent = sidebarContent_JOB;
 	const [activeContent, setActiveContent] = useState(sidebarContent[0]);
+	const countries = useCountries();
+	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [isSubmitted, setIsSubmitted] = useState(false);
 
-	if (state.succeeded) {
-		return (
-			<section className="bg-[#F9F7F8] md:px-14 px-5 py-20 flex justify-center">
-				<div className="text-center">
-					<h1 className="lg:text-4xl text-2xl font-bold text-primary">Thank you for reaching out!</h1>
-					<p className="mt-4 text-lg text-darkBlue">We&apos;ll get back to you as soon as possible.</p>
-				</div>
-			</section>
-		);
+	const { register, handleSubmit, reset } = useForm<NannyData>();
+
+	async function onSubmit(data: NannyData) {
+		const formData = new FormData();
+
+		formData.append("name", data.name);
+		formData.append("email", data.email);
+		formData.append("country", data.country);
+		formData.append("phone", data.phone);
+		formData.append("document", data.document[0]);
+
+		try {
+			setIsSubmitting(true);
+			const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/nanny/nanny-email`, {
+				method: "POST",
+				body: formData,
+			});
+
+			if (!response.ok) {
+				throw new Error("Failed to send data");
+			}
+			setIsSubmitted(true);
+		} catch (error) {
+			console.error(error);
+			throw error;
+		} finally {
+			setIsSubmitting(false);
+			// Reset the form
+			reset();
+		}
 	}
 
 	return (
@@ -184,10 +216,7 @@ const FindJobs = () => {
 				</div>
 			</section>
 
-			{/* <ContactUs /> */}
-
 			{/* Contact us */}
-
 			<section className="bg-[#F9F7F8] md:px-14 px-5 py-20 flex lg:flex-row flex-col gap-y-10">
 				<Slide className="lg:w-[40%] w-full flex flex-col lg:pt-24">
 					<div className="self-center mb-5">
@@ -202,43 +231,24 @@ const FindJobs = () => {
 				</Slide>
 
 				<form
-					onSubmit={handleSubmit}
+					onSubmit={handleSubmit(onSubmit)}
 					className="lg:w-[60%] w-full flex flex-col space-y-5 lg:border-l-2 lg:pl-5 lg:border-l-black"
 				>
-					{/* First and Last Name */}
+					{/* Name and Email */}
 					<div className="flex justify-between lg:space-x-10 space-x-2">
 						<div className="flex flex-col w-full">
-							<label htmlFor="firstname" className="text-lg">
-								First Name
+							<label htmlFor="name" className="text-lg">
+								Name
 							</label>
 							<input
 								required
 								type="text"
-								id="firstname"
-								name="firstname"
-								placeholder="Enter your First Name"
+								id="name"
+								placeholder="Enter your Full name"
 								className="h-14 px-2 border border-black rounded-md bg-white w-full"
+								{...register("name")}
 							/>
-							<ValidationError prefix="First Name" field="firstname" errors={state.errors} />
 						</div>
-						<div className="flex flex-col w-full">
-							<label htmlFor="lastname" className="text-lg">
-								Last Name
-							</label>
-							<input
-								required
-								type="text"
-								id="lastname"
-								name="lastname"
-								placeholder="Enter your Last Name"
-								className="h-14 px-2 border border-black rounded-md bg-white w-full"
-							/>
-							<ValidationError prefix="Last Name" field="lastname" errors={state.errors} />
-						</div>
-					</div>
-
-					{/* Email and Phone */}
-					<div className="flex justify-between lg:space-x-10 space-x-2">
 						<div className="flex flex-col w-full">
 							<label htmlFor="email" className="text-lg">
 								Email
@@ -247,12 +257,15 @@ const FindJobs = () => {
 								required
 								type="email"
 								id="email"
-								name="email"
 								placeholder="Enter your Email"
 								className="h-14 px-2 border border-black rounded-md bg-white w-full"
+								{...register("email")}
 							/>
-							<ValidationError prefix="Email" field="email" errors={state.errors} />
 						</div>
+					</div>
+
+					{/* Phone and Country */}
+					<div className="flex justify-between lg:space-x-10 space-x-2">
 						<div className="flex flex-col w-full">
 							<label htmlFor="phone" className="text-lg">
 								Phone
@@ -261,28 +274,48 @@ const FindJobs = () => {
 								required
 								type="tel"
 								id="phone"
-								name="phone"
 								placeholder="Enter your Phone Number"
 								className="h-14 px-2 border border-black rounded-md bg-white w-full"
+								{...register("phone")}
 							/>
-							<ValidationError prefix="Phone" field="phone" errors={state.errors} />
+						</div>
+						<div className="flex flex-col w-full">
+							<label htmlFor="country" className="text-lg">
+								Country of Residence
+							</label>
+
+							<select
+								required
+								id="country"
+								className="h-14 px-2 border border-black rounded-md bg-white w-full"
+								{...register("country")}
+							>
+								<option value="" hidden>
+									Select your country
+								</option>
+								{countries.map((country) => (
+									<option key={country} value={country}>
+										{country}
+									</option>
+								))}
+							</select>
 						</div>
 					</div>
 
-					{/* Message */}
-					<div>
-						<label htmlFor="message" className="text-lg">
-							Message
+					{/* UPLOAD CV/RESUME */}
+					<div className="flex flex-col w-full">
+						<label htmlFor="resume" className="text-lg">
+							Upload CV/Resume
 						</label>
-						<textarea
-							id="message"
-							name="message"
-							placeholder="Enter your Message"
-							className="px-2 border border-black rounded-md bg-white w-full"
-							cols={30}
-							rows={6}
+						<input
+							required
+							type="file"
+							accept=".pdf,.doc,.docx"
+							id="resume"
+							placeholder="Upload your CV/Resume"
+							className="h-14 w-full rounded-md border border-black file:mr-4 file:py-2 file:px-8 file:h-full file:border-0 file:text-sm file:font-semibold file:bg-black/15 file:text-textColor hover:file:bg-black/15"
+							{...register("document")}
 						/>
-						<ValidationError prefix="Message" field="message" errors={state.errors} />
 					</div>
 
 					{/* Terms and Submit Button */}
@@ -296,15 +329,21 @@ const FindJobs = () => {
 						<button
 							type="submit"
 							className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon self-start"
-							disabled={state.submitting}
+							disabled={isSubmitting}
 						>
-							{state.submitting ? "Submitting..." : "Submit"}
+							{isSubmitting ? "Submitting..." : "Submit"}
 						</button>
 					</div>
+
+					{isSubmitted && (
+						<p className="text-green-500 text-lg font-semibold">
+							Thank you for submitting your application. We will get back to you soon.
+						</p>
+					)}
 				</form>
 			</section>
 		</div>
 	);
 };
 
-export default FindJobs;
+export default Nanny;

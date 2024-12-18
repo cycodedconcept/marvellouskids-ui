@@ -15,7 +15,6 @@ const navLinks = [
 		href: "/faq",
 		sub: [
 			{ name: "FAQ", href: "/faq" },
-			// { name: "Find a Job", href: "/find-jobs" },
 			{ name: "Our Environment", href: "/our-environment" },
 			{ name: "Our Solution", href: "/our-solution" },
 		],
@@ -71,7 +70,12 @@ const NavBar = () => {
 								{sub && showDropdown === name && (
 									<ul className="absolute bg-white p-2 top-5 left-0 w-40 shadow-lg">
 										{sub.map(({ name, href }) => (
-											<li key={name} className="hover:bg-gray-100 rounded p-2">
+											<li
+												key={name}
+												className={`hover:bg-gray-100 rounded p-2 ${
+													pathname === href && "bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon"
+												}`}
+											>
 												<Link href={href} onClick={() => setActiveNav(href)}>
 													{name}
 												</Link>
@@ -124,7 +128,12 @@ const NavBar = () => {
 								{sub && showDropdown === name && (
 									<ul className="mt-2 ml-4 space-y-2 text-gray-600 rounded-lg">
 										{sub.map(({ name, href }) => (
-											<li key={name}>
+											<li
+												key={name}
+												className={`${
+													pathname === href && "bg-clip-text text-transparent bg-gradient-to-r from-primary to-lemon"
+												}`}
+											>
 												<Link href={href} onClick={() => closeMobileNav()}>
 													{name}
 												</Link>

@@ -20,9 +20,12 @@ export default function Home() {
 						Caring for Your Children, Supporting Your Family.
 					</h3>
 
-					<button className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon capitalize lg:text-2xl md:text-xl text-lg">
+					<Link
+						href="/contact-us"
+						className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon capitalize lg:text-2xl md:text-xl text-lg"
+					>
 						Book a visit
-					</button>
+					</Link>
 				</Slide>
 			</main>
 			<section className="flex flex-col md:flex-row items-center justify-between md:space-x-10 space-y-5 md:px-14 px-5 pb-10">

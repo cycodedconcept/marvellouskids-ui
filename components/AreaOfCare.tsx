@@ -56,7 +56,7 @@ const AreaOfCare = () => {
 						<h3 className="text-2xl font-bold pb-3">{area.title}</h3>
 						<p>{area.content}</p>
 						<div className="flex-grow"></div>
-						<Link href="/" className="text-primary font-bold self-end mt-5">
+						<Link href="/area-of-care" className="text-primary font-bold self-end mt-5">
 							Read More
 						</Link>
 					</div>

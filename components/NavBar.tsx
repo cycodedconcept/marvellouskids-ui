@@ -9,7 +9,7 @@ const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "Why us", href: "/why-us" },
 	{ name: "Area of Care", href: "/area-of-care" },
-	{ name: "Nanny", href: "nanny" },
+	{ name: "Become a Nanny", href: "/nanny" },
 	{
 		name: "More",
 		href: "/faq",

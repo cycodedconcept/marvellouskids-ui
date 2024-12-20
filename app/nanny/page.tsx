@@ -2,12 +2,12 @@
 
 import { Slide } from "@/animation/Slide";
 import { sidebarContent_JOB } from "@/data/sidebarContent";
-import { useCountries } from "@/hook/useCountries";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaArrowRight } from "react-icons/fa";
+import { getNames } from "country-list";
 
 type NannyData = {
 	name: string;
@@ -47,7 +47,6 @@ const Nanny = () => {
 
 	const sidebarContent = sidebarContent_JOB;
 	const [activeContent, setActiveContent] = useState(sidebarContent[0]);
-	const countries = useCountries();
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -290,7 +289,7 @@ const Nanny = () => {
 								<option value="" hidden>
 									Select your country
 								</option>
-								{countries.map((country) => (
+								{getNames().map((country: string) => (
 									<option key={country} value={country}>
 										{country}
 									</option>

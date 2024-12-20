@@ -19,8 +19,6 @@ const ContactUs = () => {
 	const [isSubmitted, setIsSubmitted] = React.useState(false);
 
 	async function onSubmit(data: FormData) {
-		console.log("Data", data);
-
 		try {
 			setIsSubmitting(true);
 			const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/email/send-email`, {
@@ -36,7 +34,6 @@ const ContactUs = () => {
 			}
 			setIsSubmitted(true);
 		} catch (error) {
-			console.error(error);
 			throw error;
 		} finally {
 			setIsSubmitting(false);
@@ -143,7 +140,7 @@ const ContactUs = () => {
 				<div className="flex sm:flex-row flex-col sm:items-center justify-between space-y-3">
 					<div>
 						<input type="checkbox" id="terms" className="accent-primary" />
-						required
+
 						<label htmlFor="terms" className="text-lg ml-3">
 							I agree with Terms of Use and Privacy Policy
 						</label>

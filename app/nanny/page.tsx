@@ -74,7 +74,6 @@ const Nanny = () => {
 			}
 			setIsSubmitted(true);
 		} catch (error) {
-			console.error(error);
 			throw error;
 		} finally {
 			setIsSubmitting(false);
@@ -224,9 +223,7 @@ const Nanny = () => {
 					</div>
 					<div>
 						<h4 className="lg:text-2xl text-lg text-primary font-semibold">Contact Us</h4>
-						<h1 className="lg:text-5xl text-4xl font-extrabold text-darkBlue">
-							You&apos;ve Got Questions <br /> Feel Free to Ask
-						</h1>
+						<h1 className="lg:text-5xl text-4xl font-extrabold text-darkBlue">Want to become a Nanny? Join now</h1>
 					</div>
 				</Slide>
 

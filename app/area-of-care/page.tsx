@@ -103,89 +103,60 @@ const AreaOfCare = () => {
 					<p className="text-lg mb-5">Your email address will not be published. Required fields are marked</p>
 
 					<ContactUsForm />
-
-					{/* <form className="w-full flex flex-col space-y-5 lg:border-l-2 lg:pl-5 lg:border-l-black">
-						<div className="flex justify-between lg:space-x-10 space-x-2">
-							<div className="flex flex-col w-full">
-								<label htmlFor="firstname" className="text-lg">
-									First Name
-								</label>
-								<input
-									type="text"
-									id="firstname"
-									placeholder="Enter you First Name"
-									className="h-14 px-2 border border-black rounded-md bg-white w-full"
-								/>
-							</div>
-							<div className="flex flex-col w-full">
-								<label htmlFor="lastname" className="text-lg">
-									Last Name
-								</label>
-								<input
-									type="text"
-									id="lastname"
-									placeholder="Enter your Last Name"
-									className="h-14 px-2 border border-black rounded-md bg-white w-full"
-								/>
-							</div>
-						</div>
-
-						<div className="flex justify-between lg:space-x-10 space-x-2">
-							<div className="flex flex-col w-full">
-								<label htmlFor="email" className="text-lg">
-									Email
-								</label>
-								<input
-									type="email"
-									id="email"
-									placeholder="Enter your Email"
-									className="h-14 px-2 border border-black rounded-md bg-white w-full"
-								/>
-							</div>
-							<div className="flex flex-col w-full">
-								<label htmlFor="phone" className="text-lg">
-									Phone
-								</label>
-								<input
-									type="tel"
-									id="phone"
-									placeholder="Enter your Phone Number"
-									className="h-14 px-2 border border-black rounded-md bg-white w-full"
-								/>
-							</div>
-						</div>
-
-						<div>
-							<label htmlFor="message" className="text-lg">
-								Message
-							</label>
-							<textarea
-								className="px-2 border border-black rounded-md bg-white w-full"
-								id="message"
-								placeholder="Enter your Message"
-								cols={30}
-								rows={6}
-							/>
-						</div>
-
-						<div className="flex sm:flex-row flex-col sm:items-center justify-between space-y-3">
-							<div>
-								<input type="checkbox" id="terms" className="accent-primary" />
-								<label htmlFor="terms" className="text-lg ml-3">
-									I agree with Terms of Use and Privacy Policy
-								</label>
-							</div>
-
-							<button
-								type="submit"
-								className="text-white py-2 px-10 rounded-full bg-gradient-to-r from-primary to-lemon self-start"
-							>
-								Submit
-							</button>
-						</div>
-					</form> */}
 				</div>
 			</section>
+
+			{/* Our Tuition */}
+			<div className="text-center pb-20 pt-10 bg-[#F9F7F8] flex flex-col items-center">
+				<h4 className="lg:text-2xl text-lg text-primary font-semibold">Our Tuition</h4>
+				<h1 className="lg:text-5xl text-4xl font-extrabold">
+					Affordable, Flexible & <br /> Transparent Tuition
+				</h1>
+
+				{/* Table */}
+				<div className="w-full flex lg:justify-center overflow-x-scroll">
+					<table className="my-10 min-w-[60rem]">
+						<thead>
+							<tr>
+								<th className="p-2"></th>
+								<th className="p-2">0 - 2 Years Olds</th>
+								<th className="p-2">2 - 3 Years Olds</th>
+								<th className="p-2">3 - 4 Years Olds</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr className="border-b">
+								<td className="p-3 text-start font-semibold">Full Weeks / 06:30AM - 07:00PM (Monday to Friday)</td>
+								<td className="p-3">£316.00</td>
+								<td className="p-3">£316.00</td>
+								<td className="p-3">£316.00</td>
+							</tr>
+
+							<tr className="border-b">
+								<td className="p-3 text-start font-semibold">Full Day / 06:30AM - 07:00PM</td>
+								<td className="p-3">£93.00</td>
+								<td className="p-3">£93.00</td>
+								<td className="p-3">£93.00</td>
+							</tr>
+
+							<tr className="border-b">
+								<td className="p-3 text-start font-semibold">Morning / 06:30AM - 01:00PM</td>
+								<td className="p-3">£59.00</td>
+								<td className="p-3">£59.00</td>
+								<td className="p-3">£59.00</td>
+							</tr>
+
+							<tr className="border-b">
+								<td className="p-3 text-start font-semibold">Afternoon / 06:30AM - 07:00PM</td>
+								<td className="p-3">£59.00</td>
+								<td className="p-3">£59.00</td>
+								<td className="p-3">£59.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 	);
 };

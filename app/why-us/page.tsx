@@ -60,7 +60,7 @@ const WhyUsPage = () => {
 						<div className="mt-14 flex flex-col space-y-5 text-lg">
 							<ul className="flex items-center justify-between">
 								<li>Mon - Fri</li>
-								<li>07:00AM -06:00PM</li>
+								<li>06:30AM -07:00PM</li>
 							</ul>
 
 							<ul className="flex items-center justify-between">

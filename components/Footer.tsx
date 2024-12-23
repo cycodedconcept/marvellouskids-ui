@@ -44,7 +44,7 @@ const Footer = () => {
 
 						<h3>
 							<span className="text-white">Opening & Closing Hours: </span>
-							Mon - Fri: 07:00AM - 06:00PM Sat - Sun 10:00AM - 04:00PM
+							Mon - Fri: 06:30AM - 07:00PM Sat - Sun 10:00AM - 04:00PM
 						</h3>
 					</div>
 
